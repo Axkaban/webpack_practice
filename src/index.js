@@ -1,9 +1,10 @@
 // import _ from 'lodash';
 import { cube } from './math';
 import printMe from './print';
-import './styles.css';
 
-
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Dev Mode! Yay!')
+}
 
 function component() {
     // const element = document.createElement('div');
